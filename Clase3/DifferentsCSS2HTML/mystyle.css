@@ -1,0 +1,32 @@
+body{
+    background-color: aquamarine;
+    background-image: linear-gradient(to left, green, yellow, indigo, indigo, yellow, orange, violet);
+    color: black;
+}
+
+.preamble {
+    display: none;
+    /* color: beige; */
+    /* opacity: 0; */
+}
+
+h1{
+    /* position:fixed; */
+    background-color: blueviolet;
+    padding: 10px;
+    padding-left: 50%;
+}
+
+h2,
+h3,
+h4 {
+    color: black;
+    background-color: aliceblue;
+    padding: 10px 10px 10px 10px;
+    padding-left: 70%;
+    font-family: 'Courier New', Courier, monospace;
+    /* float:left; */
+    text-decoration: overline;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    
+}
