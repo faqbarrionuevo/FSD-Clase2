@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Pedido</title>
+</head>
+<body>
+
+    <div id="pedido">
+        texto
+    </div>
+
+    <script>
+
+        let suma = 0;
+
+        let pan = "invalid";
+        let carne = "invalid";
+        let aderezo = "invalid";
+
+        while( pan != "blanco" && pan != "negro" && pan !="s/gluten")
+        {
+            pan = prompt("Eliga el pan (blanco, negro o s/gluten): ");
+        }
+        if(pan == "blanco")
+        {
+            suma += 50;
+        }
+        else if (pan == "negro")
+        {
+            suma+=60;
+        }
+        else if (pan == "s/gluten")
+        {
+            suma += 75;
+        }
+
+        while( carne != "carne" && carne != "pollo" && carne !="veggie")
+        {
+            carne = prompt("Eliga el carne (carne, pollo o veggie): ");
+        }
+        if(carne == "carne")
+        {
+            suma += 200;
+        }
+        else if (carne == "pollo")
+        {
+            suma+=150;
+        }
+        else if (carne == "veggie")
+        {
+            suma += 100;
+        }
+
+        while( aderezo != "queso" && aderezo != "tomate" && aderezo !="cebolla")
+        {
+            aderezo = prompt("Eliga el aderezo (tomate, cebolla y/o queso separados por comas): ");
+        }
+        if(aderezo.includes("queso"))
+        {
+            suma += 20;
+        }
+        if (aderezo.includes("tomate"))
+        {
+            suma+=15;
+        }
+        if (aderezo.includes("cebolla"))
+        {
+            suma += 10;
+        }   
+
+        document.getElementById('pedido').innerHTML = suma;
+
+    </script>
+</body>
+</html>
