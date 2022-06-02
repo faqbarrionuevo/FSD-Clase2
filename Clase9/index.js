@@ -7,7 +7,7 @@ const btnDibujar = document.getElementById('btn-dibujar');
 
 btnDibujar.onclick = function()
 {
-    let textoFix = textarea.value.replaceAll('\n','<br>');
+    //let textoFix = textarea.value.replaceAll('\n','<br>');
     console.log(textarea.value);
     //dibujar.innerText = textarea.value;
     //dibujar.innerHTML = textoFix;
